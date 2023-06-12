@@ -81,7 +81,7 @@ def run_socket_server():
             time_key = datetime.now().isoformat()
             result[time_key] = data_json
             with open('storage/data.json', "w", encoding="utf-8") as f:
-                f.write(json.dumps(result) + '\n') #, ensure_ascii=False
+                f.write(json.dumps(result) + '\n')
             print(result)
 
 if __name__ == '__main__':
